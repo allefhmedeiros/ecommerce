@@ -160,13 +160,15 @@
             "cost"=>12
         ]);
         $user->setPassword($password);
-    });      
-    
-    $page = new Hcode\PageAdmin([
+        
+            $page = new Hcode\PageAdmin([
         "header"=>false,
         "footer"=>false
     ]);
     $page->setTpl("forgot-reset-success");  
+    });      
+    
+
     
     $app->run();
  ?>
